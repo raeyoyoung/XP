@@ -1,0 +1,92 @@
+:root {
+--wallpaper: url("images/bone-gate.jpg");
+
+  --journal-tab: #64394f;
+
+  --taskbar: #251c28;
+
+  --paper: #f3e9dc;
+
+}
+
+* { box-sizing: border-box; }
+
+body {
+
+  margin: 0;
+
+  min-height: 100dvh;
+
+  display: grid;
+
+  grid-template-rows: 1fr auto;
+
+  font-family: system-ui, sans-serif;
+
+  color: #271f28;
+
+  background: var(--wallpaper) center / cover no-repeat #221823;
+
+}
+
+.desktop { padding: clamp(1rem, 4vw, 3rem); }
+
+.window {
+
+  width: min(100%, 42rem);
+
+  margin: 1.5rem auto;
+
+  background: var(--paper);
+
+  border: 1px solid #443747;
+
+  box-shadow: 6px 8px 0 #0005;
+
+}
+
+.title-bar, .taskbar {
+
+  display: flex;
+
+  align-items: center;
+
+  padding: .65rem 1rem;
+
+  color: white;
+
+}
+
+.title-bar {
+
+  justify-content: space-between;
+
+  background: var(--journal-tab);
+
+}
+
+.title-bar h1 { margin: 0; font-size: 1rem; }
+
+.taskbar { background: var(--taskbar); }
+
+button {
+
+  font: inherit;
+
+  cursor: pointer;
+
+  padding: .35rem .65rem;
+
+  border: 1px solid currentColor;
+
+  background: var(--paper);
+
+  color: #271f28;
+
+}
+
+#posts { padding: 1rem; }
+
+article + article { margin-top: 1.5rem; border-top: 1px solid #b9a9ad; padding-top: 1rem; }
+
+article h2 { margin: .4rem 0; }
