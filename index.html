@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RaeYoYoung — Studio Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <main class="desktop">
+    <button class="shortcut" type="button"
+            data-open="journal" aria-controls="journal">
+      Studio Journal
+    </button>
+
+    <section class="window" id="journal" aria-labelledby="journal-title">
+      <header class="title-bar">
+        <h1 id="journal-title" tabindex="-1">Studio Journal</h1>
+        <button type="button" data-close aria-label="Close journal">×</button>
+      </header>
+
+      <div id="posts">
+        <!-- Copy an article block whenever you write a new post. -->
+        <article>
+          <time datetime="2026-11-04">November 4, 2026</time>
+          <h2>Shell studies</h2>
+          <p>Replace this sample with your first studio note.</p>
+        </article>
+
+        <article>
+          <time datetime="2026-11-10">November 10, 2026</time>
+          <h2>Notes from the knitting machine</h2>
+          <p>Replace this sample with a post about a piece in progress.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="taskbar">
+    <button type="button" data-open="journal" aria-controls="journal">
+      Journal
+    </button>
+  </footer>
+</body>
+</html>
